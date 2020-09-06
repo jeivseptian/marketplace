@@ -1,101 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+@extends('layouts.app')
 
-    <title>Store - Your Best Marketplace</title>
+@section('title')
+    Store Detail Page
+@endsection
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="style/main.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
-      data-aos="fade-down"
-    >
-      <div class="container">
-        <a href="/index.html" class="navbar-brand">
-          <img src="/images/logo.svg" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="/categories.html" class="nav-link">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Rewards</a>
-            </li>
-          </ul>
-
-          <!-- desktop menu -->
-          <ul class="navbar-nav d-none d-lg-flex">
-            <li class="nav-otem dropdown">
-              <a
-                href="#"
-                class="nav-link"
-                id="NavbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-              >
-                <img
-                  src="/images/icon-user.png"
-                  alt=""
-                  class="rounded-circle mr-2 profile-picture"
-                />
-                Hi, Jeiv
-              </a>
-              <div class="dropdown-menu">
-                <a href="/dashboard.html" class="dropdown-item">Dashboard</a>
-                <a href="/dashboard-account.html" class="dropdown-item"
-                  >Settings</a
-                >
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item">Logout</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link d-inline-block mt-2">
-                <img src="/images/icon-cart-empty.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-
-          <!-- mobile menu -->
-          <ul class="navbar-nav d-block d-lg-none">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Hi, Jeiv
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link d-inline-block">
-                Cart
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- page content -->
+@section('content')
+<!-- page content -->
     <div class="page-content page-details">
       <section
         class="store-breadcrumbs"
@@ -256,27 +166,10 @@
         </section>
       </div>
     </div>
+@endsection
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="pt-4 pb-2">
-              2020 Copyright Store. All Rights Reserved
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="/vendor/vue/vue.js"></script>
+@push('addon-script')
+<script src="/vendor/vue/vue.js"></script>
     <script>
       var gallery = new Vue({
         el: "#gallery",
@@ -311,6 +204,5 @@
         },
       });
     </script>
-    <script src="/script/navbar-scroll.js"></script>
-  </body>
-</html>
+    
+@endpush
