@@ -1,5 +1,5 @@
 <h1>Website marketplace using VueJs dan JavaScript</h1>
-Link :
+Link :https://jeivseptian.github.io/website-marketplace/
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
